@@ -1,0 +1,45 @@
+<%= render 'navigation' %>
+
+
+<div class="wrapper">
+  
+  <% if !notice.blank? %>
+    <span class="notice"><%= notice %></span>
+  <% end %>
+
+  <h2>Data Mahasiswa</h2>
+  <table class="tbl">
+    <thead>
+      <tr>
+        <th>Nim</th>
+        <th>Nama</th>
+        <th>Alamat</th>
+        <th>Jurusan</th>
+        <th>Angkatan</th>
+        <th style="text-align:center">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @mahasiswas.each do |mahasiswa| %>
+        <tr>
+          <td><%= mahasiswa.nim %></td>
+          <td><%= mahasiswa.nama %></td>
+          <td><%= mahasiswa.alamat %></td>
+          <td><%= mahasiswa.jurusan %></td>
+          <td><%= mahasiswa.angkatan %></td>
+          <td align="center"><%= link_to 'Show', mahasiswa, class: 'tmbl tmbl-green' %>
+          <%= link_to 'Edit', edit_mahasiswa_path(mahasiswa), class: 'tmbl tmbl-blue' %>
+          <%= link_to 'Delete', mahasiswa, class: 'tmbl tmbl-red', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="clear" style="margin-top:20px"></div>
+  
+<%= link_to 'Tambah Mahasiswa', new_mahasiswa_path, class: 'tmbl tmbl-md tmbl-green' %>
+
+</div>
+
+<br>

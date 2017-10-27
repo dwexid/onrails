@@ -1,0 +1,48 @@
+
+<div class="wrapper">
+
+<%= form_with(model: mahasiswa, local: true) do |form| %>
+  <% if mahasiswa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mahasiswa.errors.count, "error") %> prohibited this mahasiswa from being saved:</h2>
+
+      <ul>
+      <% mahasiswa.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="formgroup">
+    <!--<%= form.label :nim %>-->
+    <%= form.text_field :nim, class: 'myform', id: :mahasiswa_nim, placeholder: 'NIM Mahasiswa' %>
+  </div>
+
+  <div class="formgroup">
+    <!--<%= form.label :nama %>-->
+    <%= form.text_field :nama, class: 'myform', id: :mahasiswa_nama, placeholder: 'Nama Mahasiswa' %>
+  </div>
+
+  <div class="formgroup">
+    <!--<%= form.label :alamat %>-->
+    <%= form.text_field :alamat, class: 'myform', id: :mahasiswa_alamat, placeholder: 'Alamat' %>
+  </div>
+
+  <div class="formgroup">
+    <!--<%= form.label :jurusan %>-->
+    <%= form.text_field :jurusan, class: 'myform', id: :mahasiswa_jurusan, placeholder: 'Prodi/Jurusan' %>
+  </div>
+
+  <div class="formgroup">
+    <!--<%= form.label :angkatan %>-->
+    <%= form.text_field :angkatan, class: 'myform', id: :mahasiswa_angkatan, placeholder: 'Tahun Angkatan' %>
+  </div>
+
+  <div class="formgroup">
+    <%= form.submit :Simpan, class: 'tmbl tmbl-green tmbl-md simpan' %>
+  </div>
+<% end %>
+
+</div>
+<div class="clear">

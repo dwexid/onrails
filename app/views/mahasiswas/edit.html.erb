@@ -1,0 +1,9 @@
+<%= render 'navigation' %>
+
+<div class="container">
+    <%= render 'form', mahasiswa: @mahasiswa %>
+    <div style="width:80%;margin:0 auto;margin-top:30px">
+        <%= link_to 'Show', @mahasiswa, class: 'tmbl tmbl-md tmbl-blue show' %> 
+        <%= link_to 'Back', mahasiswas_path, class: 'tmbl tmbl-md tmbl-green back' %>
+    </div>
+</div>

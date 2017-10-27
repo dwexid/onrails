@@ -1,0 +1,230 @@
+// Place all the styles related to the mahasiswas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif !important;
+    margin: 0 !important;
+    color: #555;
+    background: #eee !important;
+}
+
+.clear {
+    clear: both;
+}
+
+#navigation {
+    width: 100%;
+    overflow: hidden;
+    background: #16a085;
+    margin-bottom: 50px;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+nav ul li a {
+    font-family: sans-serif;
+    padding: 15px 21px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+nav ul:first-child {
+    float: left;
+    padding-left: 30px;
+}
+
+.brand li a {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #fff !important;
+}
+
+.navbar li a {
+    color: #fff !important;
+}
+
+.brand li a:hover {
+    background: inherit;
+}
+
+.navbar li a:hover {
+    background: #1abc9c;
+}
+
+nav ul:last-child {
+    float: right;
+    margin-right: 30px;
+}
+
+.wrapper {
+    width: 80%;
+    padding: 25px 15px;
+    background: #f9f9f9;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-top: 3px solid #16a085;
+    box-sizing: border-box;
+}
+
+.wrapper h2 {
+    color: #666;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.wrapper table.tbl {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    width: 100%;
+    background: #fff;
+}
+
+.tbl th {
+    background: #eed;
+    border-bottom: 2px solid #ccc !important;
+}
+
+.tbl td,
+.tbl th {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.tmbl {
+    border-radius: 1px;
+    padding: 5px 8px;
+    color: #fff !important;
+    text-decoration: none;
+    border: 1px;
+}
+
+.tmbl-md {
+    padding: 9px 15px
+}
+
+.tmbl:hover {
+    background: #777;
+    text-decoration: none;
+}
+
+.tmbl-green {
+    background: #1abc9c;
+}
+
+.tmbl-blue {
+    background: #3498db;
+}
+
+.tmbl-red {
+    background: #e74c3c;
+}
+
+.formgroup {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.myform {
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #666;
+}
+
+.formgroup .simpan {
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.formgroup .simpan:hover {
+    background: #16a085 !important;
+}
+
+#show .tbl {
+    width: 80%;
+    border: 0 !important;
+}
+
+#show .tbl th {
+    text-align: right;
+    border-bottom: 1px !important;
+    width: 30%;
+}
+
+.notice {
+    display: block;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-style: italic;
+    background: #ddd !important;
+    color: #2980b9 !important;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+// style for home controller
+#home {
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+}
+
+#home .wrapper {
+    opacity: .8;
+    padding: 45px 30px;
+}
+
+#home .wrapper h1 {
+    text-align: center
+}
+
+#home .wrapper p {
+    font-family: sans-serif !important;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#home h1 {
+    margin: 10px 0;
+}
+
+.gotoapp {
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+.gotoapp a {
+    font-size: 16px;
+    padding: 16px 30px;
+    border-radius: 3px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.gotoapp a:hover {
+    background: #16a085;
+}
